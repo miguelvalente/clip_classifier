@@ -71,7 +71,7 @@ const Description = () => {
                         />
                         <DescriptionItem 
                             icon={<SendToMobileOutlinedIcon style={{ height: 25, width: 25 }} />}
-                            title='Classifi the Image for Classification'
+                            title='Send the Image for Classification'
                             subtitle='Press the Send button to send the image and labels to the machine learning model for classification.'
                         />
                         <DescriptionItem 

@@ -76,3 +76,14 @@ Go to http://localhost:3000/ to view the application.
 ### 4. Acccess the swagger documentation
 
 Go to http://127.0.0.1:8000/swagger/ # clip_classifier
+
+
+## Acknowledgment
+
+- [BobsProgrammingAcademyTemplate](https://github.com/BobsProgrammingAcademy/image-classification)
+- [CLIP](https://github.com/openai/CLIP)
+
+## Resources to learn Django and React
+
+- [Django+React](https://www.youtube.com/watch?v=tYKRAXIio28)
+- [React](https://www.youtube.com/watch?v=6fM3ueN9nYM)
