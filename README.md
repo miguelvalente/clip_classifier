@@ -2,6 +2,9 @@
 
 This is an image classification app built using **Django 3**, **Django REST Framework 3**, **Next.js 12**, and **Material UI 5**. The app uses **[CLIP](https://github.com/openai/CLIP)** to classify images selected by the user provided a list.
 
+![plot](https://github.com/miguelvalente/clip_classifier/blob/master/frontend/public/images/clip_classifier.png?raw=true)
+
+
 
 ## Installation
 
