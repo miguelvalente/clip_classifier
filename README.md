@@ -75,7 +75,7 @@ Go to http://localhost:3000/ to view the application.
 
 ### 4. Acccess the swagger documentation
 
-Go to http://127.0.0.1:8000/swagger/ # clip_classifier
+Go to http://127.0.0.1:8000/swagger/ 
 
 
 ## Acknowledgment
