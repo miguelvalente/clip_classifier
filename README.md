@@ -31,7 +31,7 @@ The instaling process is quite simple. You only need to have [Docker](https://do
 #### 3. Migrate
 docker-compose run web python3 manage.py migrate
 ```bash
-docker-compose run web python3 manage.py migrate
+docker-compose run api python3 manage.py migrate
 ```
 #### 4. Build/Run the app
 
