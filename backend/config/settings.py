@@ -113,7 +113,7 @@ USE_TZ = True
 
 
 # CLIP model directory
-CLIP_MODEL_DIR = BASE_DIR.parent / 'model'
+CLIP_MODEL_DIR = BASE_DIR / 'model'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
