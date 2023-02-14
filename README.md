@@ -15,20 +15,27 @@ git clone https://github.com/miguelvalente/clip_classifier.git
 cd clip_classifier
 ```
 
-### 2. Install required backend dependencies with [Poetry](https://python-poetry.org/docs/)
+### 2. Download Clip
+
+```bash
+mkdir model
+wget -P model https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt
+```
+
+### 3. Install required backend dependencies with [Poetry](https://python-poetry.org/docs/)
 ```bash
 cd backend
 poetry install
 ```
 
 
-### 3.  Activate the environment python backend environemnt
+### 4.  Activate the environment python backend environemnt
 
 ```bash
 poetry shell
 ```
 
-### 4. Run migrations
+### 5. Run migrations
 
 ```bash
 python manage.py makemigrations
@@ -38,7 +45,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 5. Install required frontend dependencies
+### 6. Install required frontend dependencies
 
 From the **root** directory run:
 

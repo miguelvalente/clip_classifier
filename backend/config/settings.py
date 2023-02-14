@@ -112,6 +112,9 @@ USE_L10N = True
 USE_TZ = True
 
 
+# CLIP model directory
+CLIP_MODEL_DIR = BASE_DIR.parent / 'model'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
@@ -132,4 +135,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-FILE_UPLOAD_PERMISSIONS=0o640
+FILE_UPLOAD_PERMISSIONS = 0o640

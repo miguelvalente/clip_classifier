@@ -1,13 +1,9 @@
-import cv2
-import os
-import ssl
 import numpy as np
-from django.conf import settings
 from django.db import models
 from PIL import Image
 import clip
 import torch
-
+from config.settings import CLIP_MODEL_DIR
 
 class Classifier(models.Model):
     image = models.ImageField(upload_to='images')
@@ -28,7 +24,7 @@ class Classifier(models.Model):
         try:
             device = "cuda" if torch.cuda.is_available() else "cpu"
             print("Using device:", device)
-            model, preprocess = clip.load("ViT-B/32", device=device)
+            model, preprocess = clip.load("ViT-B/32", device=device, download_root=CLIP_MODEL_DIR)
 
             image = preprocess(Image.open(self.image)).unsqueeze(0).to(device)
             labels = self._format_labels()
