@@ -1,4 +1,6 @@
 services:
+  db:
+    image: postgres
   api:
     build: ./backend        
     ports:
@@ -6,6 +8,8 @@ services:
     volumes:
       - ./backend:/backend
     command: bash -c "python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - db
 
   web:
     build: ./frontend

@@ -28,13 +28,19 @@ After that you can either install/run the app with **Docker** or **Without Docke
 
 The instaling process is quite simple. You only need to have [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/). 
 
-#### 1. Build/Run the app
+#### 3. Migrate
+docker-compose run web python3 manage.py migrate
+```bash
+docker-compose run web python3 manage.py migrate
+```
+#### 4. Build/Run the app
 
+docker-compose run web python3 manage.py migrate
 ```bash
 docker-compose up --build
 ```
 
-#### 2. View the application & Acccess the swagger documentation
+#### 5. View the application & Acccess the swagger documentation
 
 - Go to http://localhost:3000/ to view the application.
 

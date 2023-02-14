@@ -149,7 +149,7 @@ const Classifier = () => {
                                             />
                                         </Box>
                                             <TextArea 
-                                                label='Enter a list of one more more label, for example: cat, dog, bird'
+                                                label='Enter a list of labels, for example: cat, dog, bird'
                                                 value={labels}
                                                 onChange={handleChange}
                                             />
