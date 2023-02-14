@@ -24,11 +24,11 @@ class Classifier(models.Model):
         try:
             device = "cuda" if torch.cuda.is_available() else "cpu"
             print("Using device:", device)
+            print(CLIP_MODEL_DIR)
             model, preprocess = clip.load("ViT-B/32", device=device, download_root=CLIP_MODEL_DIR)
 
             image = preprocess(Image.open(self.image)).unsqueeze(0).to(device)
             labels = self._format_labels()
-            print(self.labels)
             print(labels)
             text = clip.tokenize(labels).to(device)
 
