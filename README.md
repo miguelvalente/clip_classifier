@@ -67,8 +67,6 @@ python manage.py migrate
 
 #### 6. Install required frontend dependencies. You need [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-From the **root** directory run:
-
 ```bash
 cd ../frontend
 ```
