@@ -34,7 +34,7 @@ The instaling process is quite simple. You only need to have [Docker](https://do
 docker-compose up --build
 ```
 
-### 2. View the application & Acccess the swagger documentation
+#### 2. View the application & Acccess the swagger documentation
 
 - Go to http://localhost:3000/ to view the application.
 
